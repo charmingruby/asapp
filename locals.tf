@@ -1,9 +1,9 @@
 locals {
   common_tags = {
-    Department = "Network Engineering"
-    CreatedAt  = "2024-12-31"
-    ManagedBy  = "Terraform"
-    Owner      = "Gustavo Dias"
-    Service    = "Asapp"
+    department   = "Network Engineering"
+    created_at   = "2024-12-31"
+    managed_by   = "Terraform"
+    owner        = "Gustavo Dias"
+    service_name = "asapp"
   }
 }
