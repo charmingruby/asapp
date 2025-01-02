@@ -1,4 +1,4 @@
-module "vpc" {
+module "network" {
   source = "./modules/network"
 
   common_tags = local.common_tags

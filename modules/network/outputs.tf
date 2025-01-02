@@ -29,3 +29,7 @@ output "sg_web_id" {
 output "sg_db_id" {
   value = aws_security_group.db.id
 }
+
+output "alb_id" {
+  value = aws_alb.this.id
+}
