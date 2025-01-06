@@ -14,7 +14,7 @@ resource "aws_launch_template" "this" {
   image_id      = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   key_name      = var.instance_key_name
-  user_data     = filebase64("./modules/compute/ec2_setup.sh")
+  user_data     = filebase64("./modules/aws/compute/ec2_setup.sh")
 
   monitoring {
     enabled = true

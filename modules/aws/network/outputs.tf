@@ -13,6 +13,10 @@ output "public_subnet_ids" {
   value = [for k, v in local.subnet_ids : v if contains(split("-", k), "public")]
 }
 
+output "private_subnet_ids" {
+  value = [for k, v in local.subnet_ids : v if contains(split("-", k), "private")]
+}
+
 output "public_route_table_id" {
   value = aws_route_table.public.id
 }
