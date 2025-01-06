@@ -25,4 +25,6 @@ resource "aws_launch_template" "this" {
     delete_on_termination       = true
     security_groups             = [var.autoscaling_sg_id]
   }
+
+  tags = merge(var.common_tags, { Name = format("%s-ec2", var.common_tags.service_name) })
 }
