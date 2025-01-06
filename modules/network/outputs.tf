@@ -33,3 +33,7 @@ output "sg_db_id" {
 output "alb_id" {
   value = aws_alb.this.id
 }
+
+output "sg_autoscaling_id" {
+  value = aws_security_group.autoscaling.id
+}
